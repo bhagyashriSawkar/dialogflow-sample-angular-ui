@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <iframe allow="microphone;"
+  src="https://console.dialogflow.com/api-client/demo/embedded/421dbaee-a581-4c09-a7f0-f56ad116e206">
+</iframe> -->
+<div class="chat-window">
+  <h3 class="chat-title">JBot</h3>
+  <div class="chat-padding">
+    <div style="height: 400px; overflow:auto;">
+      <div *ngFor="let msg of messages" class="chat-msg">
+        <span class="sender">{{ msg.sender }}</span>: <span class="msg" innerHTML="{{msg.text}}"></span>
+      </div>
+    </div>
+
+    <div class="msgbox">
+    <div class="bot-wait" *ngIf="isGettingResponse">Bot is typing..</div>
+    <input type="text" (keyup.enter)="sendMessage()" [(ngModel)]="textMessage" placeholder="Enter your message here.." />
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

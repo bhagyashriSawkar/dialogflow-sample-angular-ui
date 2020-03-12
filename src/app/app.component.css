@@ -1,0 +1,58 @@
+.chat-window {
+  border-width: 1px;
+  border-color: gray;
+  height: 520px;
+  width: 500px;
+  overflow: auto;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  position: fixed;
+}
+
+.chat-padding {
+  padding: 10px;
+}
+
+.chat-msg {
+  margin-bottom: 10px;
+  border-bottom: 1px gray;
+}
+
+.sender {
+  font-weight: bold;
+  width: 100px;
+}
+
+.msg {
+  color: black;
+}
+
+.msgbox {
+  width: 90%;
+}
+
+input[type=text], select {
+  width: 95%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+}
+
+.chat-title {
+  background-color: #d33532;
+  padding: 10px;
+  margin: 0;
+  color: white;
+}
+
+.bot-wait {
+  position: fixed;
+  bottom: 55px;
+  color: chocolate;
+}
